@@ -3,25 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Project</title>
+    <title>Mario Abramovic - Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1, h2 { color: #333; }
+        .contact, .section { margin-bottom: 30px; }
+        nav ul { display: flex; list-style: none; padding: 0; }
+        nav ul li { margin-right: 10px; }
+    </style>
 </head>
 <body>
     <header>
         <h1>Hello World</h1>
         <nav>
-            <ul style="display: flex; list-style: none; padding: 0;">
-                <li style="margin-right: 10px;"><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <p>This is a work in progress I will do my best to update this as a showcase of my abilities!</p>
+        <section id="home">
+            <p>This is a work in progress I will do my best to update this as a showcase of my abilities!</p>
+        </section>
+        <section id="resume">
+            <h1>Mario Abramovic</h1>
+            <p class="contact">
+                Seattle, Washington<br>
+                Phone: (+1) 206-660-8255 | Email: <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a> | 
+                LinkedIn: <a href="https://www.linkedin.com/in/mario-abramovic/">mario-abramovic</a>
+            </p>
+
+            <div class="section">
+                <h2>Summary</h2>
+                <p>Solutions Architect passionate about building and managing innovative digital platforms that blend
+                    technology and creativity. Thrives on driving cross‑functional collaboration to turn ambitious ideas into
+                    impactful solutions, enhancing consumer engagement, and achieving measurable business success. With
+                    a strong technical foundation, excelling at translating complex challenges into clear strategies, ensuring
+                    seamless execution. Committed to shaping the future of digital experiences.</p>
+            </div>
+            
+            <div class="section">
+                <h2>Work Experience</h2>
+                <h3>Oracle - Technical Project Manager (March 2023 - June 2024)</h3>
+                <ul>
+                    <li>Streamlined operations workflows, reducing client response times by over 24 hours. Expanded use cases
+                        from 5 to 18 within a year, lowering costs by 8% with implementation of internal tools for operations teams</li>
+                    <li>Utilized Python‑pandas to identify issues with the existing IP‑to‑postal match service and collaborated on
+                        the implementation of a new matching system, boosting the match rate by 46%.</li>
+                    <li>Owned and managed the Oracle ID synchronization product, improving match rates by 78% and
+                        expanding audience reach, resulted in 18% increase in audience activation across downstream platforms.</li>
+                    <li>Partnered with internal stakeholders and conducted over 16 consumer feedback interviews to understand
+                        specific integration needs such as file size limitations and support for Google Cloud Services.</li>
+                    <li>Execution of product strategy in collaboration with customer success teams and go to market, ensuring
+                        successful product adoption and user satisfaction.</li>
+                </ul>
+                
+                <h3>Oracle - Senior Solutions Architect (July 2018 - March 2023)</h3>
+                <ul>
+                    <li>Quantitative analysis using SQL, identified low‑quality data performed cleanup, improving system health
+                        and increasing downstream platform activation by 14%.</li>
+                    <li>Enabled access to 50,000+ segments with implementation of data ingestion integrations, empowering
+                        customers to activate more diverse audiences.</li>
+                    <li>Drove over $1 billion in revenue by designing and implementing file/API data delivery integrations,
+                        expanding customer activation across a wider range of programmatic platforms DSPs, SSPs, SSOs, and
+                        Agencies.</li>
+                    <li> Monitored 30+ API integration performance and implemented throttling mechanisms to prevent system
+                        failures, enhancing platform stability. Leveraged user feedback and data‑driven insights to drive
+                        continuous product development and improvements.</li>
+                    <li>Leveraged Jira to manage and track project progress, facilitating effective collaboration across
+                        cross‑functional teams across product, engineering, and sales.</li>
+                </ul>
+                
+                <h3>Oracle - Technical Analyst (December 2014 - July 2018)</h3>
+                <ul>
+                    <li>Provided routine management and platform support for BlueKai and Eloqua to 30+ enterprise customers,
+                        addressing technical issues while utilizing ticketing systems Jira and MOS.</li>
+                    <li>Implemented a comprehensive review process for synchronous and asynchronous tagging that ensured
+                        correct data classification for over 15 publishers, improving data accuracy by 24% and enhanced reporting.</li>
+                    <li>Trained 5 junior team members on Data Management Platform functions and troubleshooting processes.</li>
+                    <li>Created and maintained 7 incident response runbooks and 3 routine maintenance runbooks.</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <p>Centennial College, Toronto, ON, Canada<br>
+                Computer & Networking Diploma (January 2009 - August 2010)</p>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <p><strong>Programming:</strong> HTML, CSS, JavaScript, Python, SQL, Bash</p>
+                <p><strong>Tools:</strong> Jira, Confluence, Git, Postman, Swagger, Excel</p>
+                <p><strong>Methodologies:</strong> Agile, Scrum, Kanban</p>
+            </div>
+        </section>
     </main>
     <footer>
-        <p>&copy;Basic HTML Project</p>
+        <p>&copy; Mario Abramovic</p>
     </footer>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
