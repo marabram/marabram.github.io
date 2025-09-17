@@ -40,6 +40,11 @@ body{
 
 footer{padding:24px 0;text-align:center;color:var(--muted);font-size:13px}
 
+/* Button styles for resume download */
+.btn{display:inline-block;padding:8px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;margin-right:8px;border:none;cursor:pointer}
+.btn.secondary{background:#e6eefc;color:var(--accent-2);font-weight:600}
+.download-controls{max-width:980px;margin:18px auto;padding:0 28px}
+
 /* Responsive */
 @media (max-width:700px){
   .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
