@@ -1,0 +1,49 @@
+/* Core layout and typography */
+:root{
+  --bg:#f6f8fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --accent-2:#1e293b;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  margin:0; background:var(--bg); color:var(--accent-2); -webkit-font-smoothing:antialiased;
+}
+.container{max-width:980px;margin:0 auto;padding:28px}
+
+.site-header{background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(30,41,59,0.02));backdrop-filter: blur(4px);}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.brand .site-title{margin:0;font-size:20px;font-weight:700}
+.brand .tagline{margin:2px 0 0;font-size:13px;color:var(--muted)}
+.main-nav ul{display:flex;gap:14px;margin:0;padding:0;list-style:none}
+.main-nav a{color:var(--accent-2);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+.main-nav a:hover{background:rgba(37,99,235,0.09);color:var(--accent)}
+
+.hero{padding:56px 0}
+.hero-title{margin:0;font-size:34px;font-weight:600}
+.hero-lead{margin-top:12px;font-size:16px;color:var(--muted)}
+
+.resume-section{padding:28px 0 56px}
+.resume-card{background:var(--card);border-radius:var(--radius);box-shadow:0 6px 28px rgba(16,24,40,0.06);padding:28px}
+.resume-header{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.resume-header h2{margin:0;font-size:22px}
+.contact{color:var(--muted);font-size:14px}
+.section{margin-top:18px}
+.section h3{margin:0 0 8px 0;color:var(--accent-2)}
+.section p, .section ul{color:#333;line-height:1.5}
+.section ul{padding-left:20px}
+.section ul li{margin-bottom:8px}
+
+footer{padding:24px 0;text-align:center;color:var(--muted);font-size:13px}
+
+/* Responsive */
+@media (max-width:700px){
+  .header-inner{flex-direction:column;align-items:flex-start;gap:12px}
+  .hero{padding:36px 0}
+  .hero-title{font-size:26px}
+  .container{padding:20px}
+}

@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mario Abramovic - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; }
-        h1, h2 { color: #333; }
-        .contact, .section { margin-bottom: 30px; }
-        nav ul { display: flex; list-style: none; padding: 0; }
-        nav ul li { margin-right: 10px; }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Hello World</h1>
-
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <h1 class="site-title">Mario Abramovic</h1>
+                <p class="tagline">Solutions Architect & Technical Leader</p>
+            </div>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="resume.html">Download CV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="home">
-            <p>This is a work in progress I will do my best to update this as a showcase of my abilities!</p>
-        </section>
-        <section id="resume">
-            <h1>Mario Abramovic</h1>
-            <p class="contact">
-                Seattle, Washington<br>
-                Phone: (+1) 206-660-8255 | Email: <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a> | 
-                LinkedIn: <a href="https://www.linkedin.com/in/mario-abramovic/">mario-abramovic</a>
-            </p>
-
-            <div class="section">
-                <h2>Summary</h2>
-                <p>Solutions Architect passionate about building and managing innovative digital platforms that blend
-                    technology and creativity. Thrives on driving cross‑functional collaboration to turn ambitious ideas into
-                    impactful solutions, enhancing consumer engagement, and achieving measurable business success. With
-                    a strong technical foundation, excelling at translating complex challenges into clear strategies, ensuring
-                    seamless execution. Committed to shaping the future of digital experiences.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2 class="hero-title">Hi — I'm Mario.</h2>
+                <p class="hero-lead">I design and deliver scalable digital platforms that connect users and business goals. This site is a work in progress — check below for a snapshot of my experience.</p>
             </div>
+        </section>
+        <section id="resume" class="resume-section">
+            <div class="container resume-card">
+                <div class="resume-header">
+                    <h2>Mario Abramovic</h2>
+                    <p class="contact">Seattle, Washington · <a href="tel:+12066608255">(+1) 206-660-8255</a> · <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a> · <a href="https://www.linkedin.com/in/mario-abramovic/">LinkedIn</a></p>
+                </div>
+
+                <div class="section">
+                    <h3>Summary</h3>
+                    <p>Solutions Architect passionate about building and managing innovative digital platforms that blend
+                        technology and creativity. Thrives on driving cross‑functional collaboration to turn ambitious ideas into
+                        impactful solutions, enhancing consumer engagement, and achieving measurable business success. With
+                        a strong technical foundation, excelling at translating complex challenges into clear strategies, ensuring
+                        seamless execution.</p>
+                </div>
             
             <div class="section">
                 <h2>Work Experience</h2>
