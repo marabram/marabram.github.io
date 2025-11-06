@@ -16,21 +16,25 @@ body{
 }
 .container{max-width:980px;margin:0 auto;padding:28px}
 
-/* Sticky Header */
+/* Fixed header: always visible */
 .site-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:linear-gradient(90deg, rgba(37,99,235,0.06), rgba(30,41,59,0.02));
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: linear-gradient(90deg, rgba(37,99,235,0.06), rgba(30,41,59,0.02));
   backdrop-filter: blur(6px);
-  box-shadow:0 2px 6px rgba(0,0,0,0.08);
-  transition:all 0.3s ease-in-out;
+  -webkit-backdrop-filter: blur(6px); /* Safari stability */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
-/* Prevent sections from being hidden behind sticky header */
-main, .hero, .resume-section {
-  scroll-margin-top: 96px;
-}
+/* Give the page room under the fixed header (tweak if needed) */
+body { padding-top: 84px; }
+
+/* Anchor scroll offset still nice to have */
+main, .hero, .resume-section { scroll-margin-top: 96px; }
 
 .header-inner{display:flex;align-items:center;justify-content:space-between}
 .brand .site-title{margin:0;font-size:20px;font-weight:700}
