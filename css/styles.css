@@ -42,7 +42,7 @@ main, .hero, .resume-section {
 /* Ensure sections don't slide under the sticky header when linked via anchors */
 main, .hero, .resume-section { scroll-margin-top: 96px; }
 
-.hero{padding:56px 0}
+.hero{padding:80px 0 56px}
 .hero-title{margin:0;font-size:34px;font-weight:600}
 .hero-lead{margin-top:12px;font-size:16px;color:var(--muted)}
 
