@@ -42,7 +42,7 @@
                 <aside class="profile-panel" aria-label="Career highlights">
                     <div class="stat-grid">
                         <div>
-                            <strong>API-first</strong>
+                            <strong>API-First</strong>
                             <span>Platform Integration Strategy</span>
                         </div>
                         <div>
@@ -249,5 +249,79 @@
             <a href="#home">Back to top</a>
         </div>
     </footer>
+
+    <script>
+        (() => {
+            const nav = document.querySelector(".resume-nav");
+            const shell = document.querySelector(".resume-shell");
+            const links = [...document.querySelectorAll(".resume-nav a")];
+            const sections = links
+                .map((link) => document.querySelector(link.getAttribute("href")))
+                .filter(Boolean);
+
+            if (!nav || !shell || !links.length || !sections.length) {
+                return;
+            }
+
+            const setActiveLink = (activeId) => {
+                links.forEach((link) => {
+                    const isActive = link.getAttribute("href") === `#${activeId}`;
+                    link.classList.toggle("is-active", isActive);
+
+                    if (isActive) {
+                        link.setAttribute("aria-current", "true");
+                    } else {
+                        link.removeAttribute("aria-current");
+                    }
+                });
+            };
+
+            const clearActiveLink = () => {
+                links.forEach((link) => {
+                    link.classList.remove("is-active");
+                    link.removeAttribute("aria-current");
+                });
+            };
+
+            const getStickyOffset = () => {
+                const headerOffset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--site-header-offset")) || 0;
+                return headerOffset + nav.offsetHeight + 16;
+            };
+
+            const updateActiveLink = () => {
+                const marker = getStickyOffset();
+                const shellRect = shell.getBoundingClientRect();
+
+                if (shellRect.top > marker || shellRect.bottom <= marker) {
+                    clearActiveLink();
+                    return;
+                }
+
+                const activeSection = sections.find((section) => {
+                    const rect = section.getBoundingClientRect();
+                    return rect.top <= marker && rect.bottom > marker;
+                }) || sections.find((section) => section.getBoundingClientRect().top > marker) || sections[sections.length - 1];
+
+                setActiveLink(activeSection.id);
+            };
+
+            let ticking = false;
+            const requestUpdate = () => {
+                if (ticking) {
+                    return;
+                }
+
+                ticking = true;
+                window.requestAnimationFrame(() => {
+                    updateActiveLink();
+                    ticking = false;
+                });
+            };
+
+            updateActiveLink();
+            window.addEventListener("scroll", requestUpdate, { passive: true });
+            window.addEventListener("resize", requestUpdate);
+        })();
+    </script>
 </body>
 </html>

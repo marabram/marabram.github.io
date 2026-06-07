@@ -51,8 +51,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(251, 253, 255, 0.86);
-  border-bottom: 1px solid rgba(216, 225, 238, 0.8);
+  background: var(--text);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(16px);
 }
 
@@ -68,7 +68,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: var(--text);
+  color: #fff;
 }
 
 .brand-mark {
@@ -77,7 +77,7 @@ a:hover {
   height: 42px;
   place-items: center;
   border-radius: var(--radius);
-  background: var(--text);
+  background: var(--accent);
   color: #fff;
   font-size: 13px;
   font-weight: 800;
@@ -96,7 +96,7 @@ a:hover {
 
 .tagline {
   margin-top: 2px;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.7);
   font-size: 13px;
 }
 
@@ -114,15 +114,15 @@ a:hover {
   align-items: center;
   min-height: 40px;
   padding: 0 12px;
-  border-radius: var(--radius);
-  color: var(--text);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 14px;
   font-weight: 700;
 }
 
 .main-nav a:hover {
-  background: var(--surface-soft);
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
 }
 
 .btn,
@@ -132,9 +132,9 @@ a:hover {
   justify-content: center;
   min-height: 44px;
   padding: 0 18px;
-  border: 1px solid var(--button);
+  border: 1px solid var(--accent);
   border-radius: var(--radius);
-  background: var(--button);
+  background: var(--accent);
   color: #fff;
   font-weight: 800;
   box-shadow: 0 12px 28px rgba(23, 32, 51, 0.18);
@@ -142,8 +142,8 @@ a:hover {
 
 .btn:hover,
 .main-nav .btn:hover {
-  border-color: var(--button-hover);
-  background: var(--button-hover);
+  border-color: var(--accent-dark);
+  background: var(--accent-dark);
   color: #fff;
 }
 
@@ -316,29 +316,28 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px;
-  padding: 18px 34px;
+  gap: 4px;
+  padding: 12px 34px;
   border-bottom: 1px solid var(--line);
-  background: #fff;
+  background: var(--text);
 }
 
 .resume-nav a {
   display: inline-flex;
   align-items: center;
-  min-height: 36px;
-  padding: 0 12px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: #f8fbff;
-  color: var(--text);
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 13px;
   font-weight: 800;
 }
 
-.resume-nav a:hover {
-  border-color: rgba(37, 99, 235, 0.35);
-  background: var(--surface-soft);
-  color: var(--accent-dark);
+.resume-nav a:hover,
+.resume-nav a.is-active,
+.resume-nav a[aria-current="true"] {
+  background: var(--accent);
+  color: #fff;
 }
 
 .resume-block {
