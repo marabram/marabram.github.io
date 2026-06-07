@@ -266,11 +266,16 @@ a:hover {
 
 .resume-header {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 28px;
   padding: 34px;
   border-bottom: 1px solid var(--line);
   background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
+}
+
+.resume-header > div:first-child {
+  min-width: 0;
 }
 
 .resume-header h2 {
@@ -287,10 +292,11 @@ a:hover {
 
 .contact-list {
   display: flex;
-  flex-wrap: wrap;
+  flex: 0 0 auto;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   gap: 10px;
-  max-width: 410px;
+  white-space: nowrap;
 }
 
 .contact-list a,
@@ -498,7 +504,9 @@ footer {
   }
 
   .contact-list {
+    flex-wrap: wrap;
     justify-content: flex-start;
+    white-space: normal;
   }
 }
 
