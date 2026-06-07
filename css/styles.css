@@ -413,6 +413,22 @@ a:hover {
   margin-bottom: 10px;
 }
 
+.integration-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 22px;
+  margin-top: 18px;
+  padding-left: 18px;
+}
+
+.integration-list li {
+  margin: 0;
+}
+
+.integration-list strong {
+  color: var(--text);
+}
+
 footer {
   border-top: 1px solid var(--line);
   background: #fff;
@@ -476,7 +492,8 @@ footer {
 
   .hero-grid,
   .resume-block,
-  .skill-grid {
+  .skill-grid,
+  .integration-list {
     grid-template-columns: 1fr;
   }
 
