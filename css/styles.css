@@ -51,8 +51,8 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--text);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(251, 253, 255, 0.86);
+  border-bottom: 1px solid rgba(216, 225, 238, 0.8);
   backdrop-filter: blur(16px);
 }
 
@@ -68,7 +68,7 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  color: #fff;
+  color: var(--text);
 }
 
 .brand-mark {
@@ -77,7 +77,7 @@ a:hover {
   height: 42px;
   place-items: center;
   border-radius: var(--radius);
-  background: var(--accent);
+  background: var(--text);
   color: #fff;
   font-size: 13px;
   font-weight: 800;
@@ -96,7 +96,7 @@ a:hover {
 
 .tagline {
   margin-top: 2px;
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--muted);
   font-size: 13px;
 }
 
@@ -114,15 +114,15 @@ a:hover {
   align-items: center;
   min-height: 40px;
   padding: 0 12px;
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.78);
+  border-radius: var(--radius);
+  color: var(--text);
   font-size: 14px;
   font-weight: 700;
 }
 
 .main-nav a:hover {
-  background: var(--accent);
-  color: #fff;
+  background: var(--surface-soft);
+  color: var(--accent);
 }
 
 .btn,
@@ -132,9 +132,9 @@ a:hover {
   justify-content: center;
   min-height: 44px;
   padding: 0 18px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--button);
   border-radius: var(--radius);
-  background: var(--accent);
+  background: var(--button);
   color: #fff;
   font-weight: 800;
   box-shadow: 0 12px 28px rgba(23, 32, 51, 0.18);
@@ -142,8 +142,8 @@ a:hover {
 
 .btn:hover,
 .main-nav .btn:hover {
-  border-color: var(--accent-dark);
-  background: var(--accent-dark);
+  border-color: var(--button-hover);
+  background: var(--button-hover);
   color: #fff;
 }
 
@@ -316,19 +316,20 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 4px;
-  padding: 12px 34px;
+  gap: 8px;
+  padding: 14px 34px;
   border-bottom: 1px solid var(--line);
-  background: var(--text);
+  background: rgba(251, 253, 255, 0.94);
+  backdrop-filter: blur(16px);
 }
 
 .resume-nav a {
   display: inline-flex;
   align-items: center;
   min-height: 40px;
-  padding: 0 14px;
-  border-radius: 6px;
-  color: rgba(255, 255, 255, 0.78);
+  padding: 0 12px;
+  border-radius: var(--radius);
+  color: var(--text);
   font-size: 13px;
   font-weight: 800;
 }
@@ -336,8 +337,8 @@ a:hover {
 .resume-nav a:hover,
 .resume-nav a.is-active,
 .resume-nav a[aria-current="true"] {
-  background: var(--accent);
-  color: #fff;
+  background: var(--surface-soft);
+  color: var(--accent);
 }
 
 .resume-block {
