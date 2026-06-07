@@ -208,13 +208,6 @@ a:hover {
   line-height: 1.7;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 32px;
-}
-
 .profile-panel {
   align-self: stretch;
 }
@@ -527,7 +520,6 @@ footer {
     font-size: 16px;
   }
 
-  .hero-actions .btn,
   .stat-grid {
     width: 100%;
   }
