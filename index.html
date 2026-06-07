@@ -1,195 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mario Abramovic - Resume</title>
-
-  <!-- SEO / Social -->
-  <meta name="description" content="Mario Abramovic — Technical Project Manager, Solutions Architect & Platform Integrations Specialist with 10+ years in AdTech/MarTech."/>
-  <meta property="og:title" content="Mario Abramovic - Resume"/>
-  <meta property="og:description" content="Technical Project Manager | Solutions Architect | Platform Integrations Specialist."/>
-  <meta property="og:type" content="website"/>
-
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Print stylesheet for clean PDF export -->
-  <style>
-    @media print {
-      nav, .site-header, footer { display: none !important; }
-      .container { width: 100%; max-width: 800px; margin: 0; }
-      a[href]:after { content: " (" attr(href) ")"; font-weight: normal; }
-      body { color: #000; }
-    }
-    /* Optional: keep the integrations list tidy if not in styles.css already */
-    .integration-list { list-style: none; padding: 0; margin-top: 0.5rem; }
-    .integration-list li { margin-bottom: 0.75rem; line-height: 1.6; }
-    .integration-list strong { font-weight: 600; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Abramovic - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="brand">
-      <h1 class="site-title">Mario Abramovic</h1>
-      <!-- <p class="tagline">Solutions Architect & Technical Leader</p> -->
-      <p class="contact">
-        <a href="tel:+12066608255">(+1) 206-660-8255</a> ·
-        <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a> ·
-        <a href="https://www.linkedin.com/in/mario-abramovic/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-    </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#home" aria-label="Mario Abramovic home">
+                <span class="brand-mark">MA</span>
+                <span>
+                    <span class="site-title">Mario Abramovic</span>
+                    <span class="tagline">Solutions Architect &amp; Technical Leader</span>
+                </span>
+            </a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="https://marioabramovic.ulemon.space">Webpage</a></li>
+                    <li><a href="#resume">Experience</a></li>
+                    <li><a href="mailto:m_abramovic@icloud.com">Contact</a></li>
+                    <li><a class="btn btn-small" href="Mario_Abramovic_Resume.pdf" download>Download Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <nav class="main-nav" aria-label="Main navigation">
-      <ul>
-        <!-- <li><a href="index.html">Home</a></li>
-        <li><a href="resume.html">Resume</a></li> -->
-        <li><a class="btn" href="Mario_Abramovic_Resume.pdf" download>Download PDF</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Technical Project Manager / Solutions Architect</p>
+                    <h1>Mario Abramovic</h1>
+                    <p class="hero-kicker">Building clean, scalable bridges between platforms, data, and business outcomes.</p>
+                    <p class="hero-lead">I am a technical leader with 10+ years of experience architecting SaaS, AdTech, and MarTech solutions. I specialize in API integrations, platform enablement, automation, and translating complex technical work into practical business impact.</p>
+                    <div class="hero-actions" aria-label="Primary actions">
+                        <a class="btn" href="Mario_Abramovic_Resume.pdf" download>Download Resume</a>
+                        <a class="btn secondary" href="mailto:m_abramovic@icloud.com">Get in Touch</a>
+                    </div>
+                </div>
 
-  <main class="container">
-      <!--<div class="resume-card"> -->
-      <!-- Keep page outline clean: section headings start at h2 inside the card -->
-      <!-- <h2>Mario Abramovic</h2>
-      <p class="contact">
-        <a href="tel:+12066608255">(+1) 206-660-8255</a> ·
-        <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a> ·
-        <a href="https://www.linkedin.com/in/mario-abramovic/">LinkedIn</a>
-      </p> -->
+                <aside class="profile-panel" aria-label="Career highlights">
+                    <div class="stat-grid">
+                        <div>
+                            <strong>Seattle</strong>
+                            <span>Based in Washington</span>
+                        </div>
+                        <div>
+                            <strong>10+</strong>
+                            <span>Years in SaaS, AdTech, and MarTech</span>
+                        </div>
+                        <div>
+                            <strong>30+</strong>
+                            <span>API integrations supported</span>
+                        </div>
+                        <div>
+                            <strong>$1B+</strong>
+                            <span>Business impact supported</span>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
 
-      <!-- Summary aligned to your PDF resume -->
-      <div class="section">
-        <h2>Technical Project Leader / Solutions Architect</h2>
-        <ul>
-          <li>10+ years of experience leading enterprise SaaS, MarTech, and AdTech programs across data integration, platform enablement, and product delivery.</li>
-          <li>Proven success driving stakeholder alignment, onboarding clients, and optimizing API &amp; cloud-based systems that scale to support $1B+ in business impact.</li>
-          <li>Strong technical foundation in Python, SQL, APIs, and marketing platforms (Eloqua, Salesforce) with cross-functional leadership in engineering, GTM, and data teams.</li>
-          <li>Excels at delivering value through agile frameworks, stakeholder collaboration, and user-focused automation strategies that improve data fidelity, adoption, and performance.</li>
-        </ul>
-      </div>
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <div class="resume-shell">
+                    <div class="resume-header">
+                        <div>
+                            <p class="eyebrow">Resume</p>
+                            <h2>Mario Abramovic</h2>
+                            <p class="role-line">Technical Project Manager | Solutions Architect | Platform Integrations Specialist</p>
+                        </div>
+                        <div class="contact-list">
+                            <a href="mailto:m_abramovic@icloud.com">m_abramovic@icloud.com</a>
+                            <a href="https://www.linkedin.com/in/mario-abramovic/">LinkedIn</a>
+                            <span>Cell: (206) 660-8255</span>
+                        </div>
+                    </div>
 
-      <div class="section">
-        <h2>Core Competencies</h2>
-        <p>
-          Project Leadership · Agile &amp; Scrum Execution · Stakeholder Engagement · Cross-Functional Collaboration · Technical Onboarding<br/>
-          Data Integrations · RESTful APIs · AdTech/MarTech Platforms · Product Enablement · System Optimization<br/>
-          Strategic Planning · Roadmap Delivery · Program Management · Client Success · Technical Documentation
-        </p>
-      </div>
+                    <section class="resume-block">
+                        <h3>Profile</h3>
+                        <ul>
+                            <li>10+ years of experience leading enterprise SaaS, MarTech, and AdTech programs across data integration, platform enablement, and product delivery.</li>
+                            <li>Proven success driving stakeholder alignment, onboarding clients, and optimizing API and cloud-based systems that scale to support $1B+ in business impact.</li>
+                            <li>Strong technical foundation in Python, SQL, APIs, and marketing platforms (Eloqua, Salesforce) with cross-functional leadership in engineering, GTM, and data teams.</li>
+                            <li>Excels at delivering value through agile frameworks, stakeholder collaboration, and user-focused automation strategies that improve data fidelity, adoption, and performance.</li>
+                        </ul>
+                    </section>
 
-      <div class="section">
-        <h2>Relevant Skills</h2>
+                    <section class="resume-block">
+                        <h3>Core Competencies</h3>
+                        <div class="pill-list">
+                            <span>Project Leadership</span>
+                            <span>Agile &amp; Scrum Execution</span>
+                            <span>Stakeholder Engagement</span>
+                            <span>Cross-Functional Collaboration</span>
+                            <span>Technical Onboarding</span>
+                            <span>Data Integrations</span>
+                            <span>RESTful APIs</span>
+                            <span>AdTech/MarTech Platforms</span>
+                            <span>Product Enablement</span>
+                            <span>System Optimization</span>
+                            <span>Roadmap Delivery</span>
+                            <span>Technical Documentation</span>
+                        </div>
+                    </section>
 
-        <h3>Data Integrations &amp; Client Enablement</h3>
-        <ul>
-          <li>Built scalable data ingestion systems powering audience targeting, campaign attribution, and marketing automation.</li>
-          <li>Architected and maintained pipelines across DSPs and SaaS platforms using REST APIs, SFTP, and secure cloud delivery.</li>
-          <li>Provided onboarding and technical support to 30+ enterprise clients using Eloqua and BlueKai, resolving configuration and data delivery issues.</li>
-          <li>Translated business requirements into structured implementation roadmaps for demand generation and identity resolution.</li>
-        </ul>
+                    <section class="resume-block">
+                        <h3>Relevant Skills</h3>
+                        <div class="skill-grid">
+                            <article>
+                                <h4>Data Integrations &amp; Client Enablement</h4>
+                                <ul>
+                                    <li>Built scalable data ingestion systems powering audience targeting, campaign attribution, and marketing automation.</li>
+                                    <li>Architected and maintained pipelines across DSPs and SaaS platforms using REST APIs, SFTP, and secure cloud delivery.</li>
+                                    <li>Provided onboarding and technical support to 30+ enterprise clients using Eloqua and BlueKai.</li>
+                                    <li>Translated business requirements into structured implementation roadmaps for demand generation and identity resolution.</li>
+                                </ul>
+                            </article>
 
-        <h3>Operational Efficiency &amp; Automation</h3>
-        <ul>
-          <li>Reduced client response time by 24+ hours by automating workflows and expanding tool use cases from 5 to 18.</li>
-          <li>Boosted postal match accuracy by 46% using Python (pandas) and refined internal matching algorithms.</li>
-          <li>Delivered data discrepancy analysis and automation plans that reduced costs by 8% and enhanced visibility for leadership.</li>
-        </ul>
+                            <article>
+                                <h4>Operational Efficiency &amp; Automation</h4>
+                                <ul>
+                                    <li>Reduced client response time by 24+ hours by automating workflows and expanding tool use cases from 5 to 18.</li>
+                                    <li>Boosted postal match accuracy by 46% using Python and refined internal matching algorithms.</li>
+                                    <li>Delivered discrepancy analysis and automation plans that reduced costs by 8% and enhanced leadership visibility.</li>
+                                </ul>
+                            </article>
 
-        <h3>Product Ownership &amp; System Optimization</h3>
-        <ul>
-          <li>Led Oracle ID Sync product, achieving a 78% increase in match rates and 18% boost in activation for downstream platforms.</li>
-          <li>Monitored and optimized 30+ API integrations using performance metrics and throttling mechanisms.</li>
-          <li>Delivered stakeholder-ready PoCs, data flow documentation, and sprint reports to support C-level alignment and feature prioritization.</li>
-          <li>Authored and maintained 10+ operational runbooks to support UAT, go-live support, and incident response readiness.</li>
-        </ul>
-      </div>
+                            <article>
+                                <h4>Product Ownership &amp; System Optimization</h4>
+                                <ul>
+                                    <li>Led Oracle ID Sync product, achieving a 78% increase in match rates and 18% boost in activation for downstream platforms.</li>
+                                    <li>Monitored and optimized 30+ API integrations using performance metrics and throttling mechanisms.</li>
+                                    <li>Delivered stakeholder-ready PoCs, data flow documentation, and sprint reports.</li>
+                                    <li>Authored and maintained 10+ operational runbooks for UAT, go-live support, and incident response readiness.</li>
+                                </ul>
+                            </article>
 
-      <div class="section">
-        <h2>Tools &amp; Tech Stack</h2>
-        <p>Python, SQL, REST APIs, Postman, Swagger, SFTP, Jira, Confluence, Tableau, Git, Salesforce, Eloqua, OCI, Data Mapping, Identity Graphs, Web Tags (Pixels, Cookies)</p>
-      </div>
+                            <article>
+                                <h4>Cross-Functional Collaboration</h4>
+                                <ul>
+                                    <li>Conducted 16+ stakeholder interviews to gather technical and business requirements for integrations.</li>
+                                    <li>Partnered with GTM and CS teams to align onboarding timelines with OKRs and platform success metrics.</li>
+                                    <li>Used Jira and Confluence to manage sprints and document workflows across Product, Engineering, and Marketing.</li>
+                                    <li>Trained junior team members on platform architecture and troubleshooting.</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
 
-      <div class="section">
-        <h2>Work History</h2>
+                    <section class="resume-block">
+                        <h3>Tools &amp; Tech Stack</h3>
+                        <p>Python, SQL, REST APIs, Postman, Swagger, SFTP, Jira, Confluence, Tableau, Git, Salesforce, Eloqua, OCI, Data Mapping, Identity Graphs, Web Tags (Pixels, Cookies)</p>
+                    </section>
 
-        <h3>Oracle — Technical Project Manager | Senior Solutions Architect</h3>
-        <p>Seattle, WA — Jul 2018 – Jun 2024</p>
-        <ul>
-          <li>Designed scalable data delivery pipelines and managed 30+ API integration points to support customer success.</li>
-          <li>Led onboarding and integration efforts for major enterprise clients, aligning delivery with roadmap objectives.</li>
-        </ul>
+                    <section class="resume-block">
+                        <h3>Work History</h3>
+                        <div class="timeline">
+                            <article>
+                                <span class="timeline-date">Jul 2018 - Jun 2024</span>
+                                <h4>Oracle</h4>
+                                <p><strong>Technical Project Manager | Senior Solutions Architect</strong>, Seattle, WA</p>
+                                <ul>
+                                    <li>Designed scalable data delivery pipelines and managed 30+ API integration points to support customer success.</li>
+                                    <li>Led onboarding and integration efforts for major enterprise clients, aligning delivery with roadmap objectives.</li>
+                                </ul>
+                            </article>
 
-        <h3>Oracle — Technical Analyst</h3>
-        <p>Toronto, ON — Dec 2014 – Jul 2018</p>
-        <ul>
-          <li>Provided technical solutions and platform support across identity resolution and campaign delivery platforms.</li>
-        </ul>
+                            <article>
+                                <span class="timeline-date">Dec 2014 - Jul 2018</span>
+                                <h4>Oracle</h4>
+                                <p><strong>Technical Analyst</strong>, Toronto, ON</p>
+                                <ul>
+                                    <li>Provided technical solutions and platform support across identity resolution and campaign delivery platforms.</li>
+                                </ul>
+                            </article>
 
-        <h3>Peel District School Board — PC/LAN Support Specialist</h3>
-        <p>Mississauga, ON — Sep 2010 – Dec 2014</p>
-        <ul>
-          <li>Supported internal infrastructure and implemented IT solutions across academic systems.</li>
-        </ul>
-      </div>
+                            <article>
+                                <span class="timeline-date">Sep 2010 - Dec 2014</span>
+                                <h4>Peel District School Board</h4>
+                                <p><strong>PC/LAN Support Specialist</strong>, Mississauga, ON</p>
+                                <ul>
+                                    <li>Supported internal infrastructure and implemented IT solutions across academic systems.</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </section>
 
-      <!-- Partnerships & Integrations Portfolio -->
-      <div class="section">
-        <h2>Partnerships &amp; Integrations Portfolio</h2>
-        <p>Successfully led and supported data integrations, onboarding, and activation pipelines across major AdTech, MarTech, and media ecosystems — enabling scalable, compliant, and high-performing audience delivery across platforms.</p>
-        <ul class="integration-list">
-          <li><strong>Google</strong> — Implemented updates leveraging new ID spaces to ensure uninterrupted audience delivery and activation continuity.</li>
-          <li><strong>MNTN</strong> — Scoped, designed, and built an OTT integration enabling activation and performance tracking across streaming environments.</li>
-          <li><strong>AdTheorent</strong> — Supported and optimized data pipelines powering audience activation and delivery for programmatic campaigns.</li>
-          <li><strong>SpotX</strong> — Enabled scalable data delivery pipelines and coordinated client requests through to production deployment.</li>
-          <li><strong>MediaMath</strong> — Supported real-time integration monitoring and maintained endpoint reliability for audience and campaign data flows.</li>
-          <li><strong>SmartADs</strong> — Developed audience injection workflows that streamlined activation processes and improved delivery timelines.</li>
-          <li><strong>LiveRamp</strong> — Collaborated on first- and third-party data onboarding initiatives, optimizing match rates and activation across partner ecosystems.</li>
-          <li><strong>Verizon</strong> — Coordinated cross-platform integrations to enable targeted audience delivery for telecom and media campaigns.</li>
-          <li><strong>Facebook (Meta)</strong> — Supported delivery of audience data from the data marketplace into Facebook’s ad ecosystem to enhance targeting precision.</li>
-          <li><strong>The Trade Desk</strong> — Managed and monitored API integrations enabling audience synchronization and activation across DSP environments.</li>
-          <li><strong>Adform</strong> — Designed and implemented a custom data integration supporting real-time activation and measurement pipelines.</li>
-          <li><strong>Amazon</strong> — Collaborated with engineering teams to establish and maintain secure data pipelines driving activation and attribution use cases.</li>
-          <li><strong>AppNexus (Xandr)</strong> — Oversaw onboarding and integration of audience data pipelines to enhance delivery and real-time targeting.</li>
-          <li><strong>Criteo</strong> — Enabled AO campaign integrations for downstream targeting and improved client audience segmentation.</li>
-          <li><strong>Integral Ad Science (IAS)</strong> — Drove integration of verification and measurement data to ensure campaign quality and brand safety standards.</li>
-          <li><strong>OpenX</strong> — Partnered with internal and external teams to validate and enable data delivery for programmatic auction workflows.</li>
-          <li><strong>TubeMogul (Adobe Advertising Cloud)</strong> — Integrated audience activation pipelines for video inventory, enabling unified delivery across DSP partners.</li>
-          <li><strong>Rocket Fuel (Sizmek)</strong> — Supported automation of audience matching and delivery for performance-based campaigns.</li>
-          <li><strong>Neustar</strong> — Collaborated on identity resolution integrations to improve data accuracy and attribution across connected systems.</li>
-          <li><strong>Quantcast</strong> — Enabled real-time audience delivery and attribution pipelines supporting advanced modeling initiatives.</li>
-          <li><strong>MediaOcean</strong> — Maintained activation and reporting integrations ensuring operational alignment with downstream partners.</li>
-          <li><strong>Salesforce / Krux</strong> — Managed integration health and ensured data delivery compliance between CRM and audience activation systems.</li>
-          <li><strong>Beeswax</strong> — Built and supported audience ingestion and activation integrations tailored to client-specific campaign needs.</li>
-          <li><strong>PubMatic</strong> — Partnered with AdOps and engineering teams to enable audience data exchange and programmatic deal activation.</li>
-          <li><strong>TrueData Japan</strong> — Onboarded the first Japan-based data provider, establishing cross-regional audience ingestion pipelines and validation processes.</li>
-        </ul>
-      </div>
+                    <section class="resume-block">
+                        <h3>Education &amp; Certification</h3>
+                        <p>Certified Scrum Product Owner (CSPO) - Scrum Alliance, 2024<br>
+                        B.Sc. Equivalency in Computer &amp; Information Systems, 2018<br>
+                        Computer and Networking Diploma, Centennial College, 2010</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
 
-      <div class="section">
-        <h2>Education &amp; Certification</h2>
-        <p>
-          Certified Scrum Product Owner (CSPO) — Scrum Alliance, 2024<br/>
-          B.Sc. Equivalency in Computer &amp; Information Systems, 2018<br/>
-          Computer &amp; Networking Diploma — Centennial College, 2010
-        </p>
-      </div>
-
-      <div class="section">
-        <h2>Skills</h2>
-        <p><strong>Programming:</strong> HTML, CSS, JavaScript, Python, SQL, Bash</p>
-        <p><strong>Tools:</strong> Jira, Confluence, Git, Postman, Swagger, Tableau, Excel</p>
-        <p><strong>Methodologies:</strong> Agile, Scrum, Kanban</p>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; Mario Abramovic</p>
-  </footer>
+    <footer>
+        <div class="container footer-inner">
+            <p>&copy; Mario Abramovic</p>
+            <a href="#home">Back to top</a>
+        </div>
+    </footer>
 </body>
 </html>
