@@ -11,6 +11,8 @@
   --button-hover: #26344d;
   --shadow: 0 20px 60px rgba(23, 32, 51, 0.11);
   --radius: 8px;
+  --site-header-offset: 77px;
+  --resume-anchor-offset: 150px;
 }
 
 * {
@@ -235,6 +237,7 @@ a:hover {
 .stat-grid strong {
   color: var(--accent);
   font-size: 30px;
+  letter-spacing: 0;
   line-height: 1;
 }
 
@@ -250,7 +253,6 @@ a:hover {
 }
 
 .resume-shell {
-  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
@@ -264,6 +266,7 @@ a:hover {
   gap: 28px;
   padding: 34px;
   border-bottom: 1px solid var(--line);
+  border-radius: var(--radius) var(--radius) 0 0;
   background: linear-gradient(135deg, #ffffff 0%, #eef4ff 100%);
 }
 
@@ -306,12 +309,45 @@ a:hover {
   font-weight: 700;
 }
 
+.resume-nav {
+  position: sticky;
+  top: var(--site-header-offset);
+  z-index: 9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 18px 34px;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.resume-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #f8fbff;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.resume-nav a:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  background: var(--surface-soft);
+  color: var(--accent-dark);
+}
+
 .resume-block {
   display: grid;
   grid-template-columns: 220px minmax(0, 1fr);
   gap: 28px;
   padding: 34px;
   border-bottom: 1px solid var(--line);
+  scroll-margin-top: var(--resume-anchor-offset);
 }
 
 .resume-block:last-child {
@@ -452,6 +488,11 @@ footer {
 }
 
 @media (max-width: 880px) {
+  :root {
+    --site-header-offset: 107px;
+    --resume-anchor-offset: 190px;
+  }
+
   .header-inner,
   .resume-header {
     align-items: flex-start;
@@ -504,6 +545,11 @@ footer {
 }
 
 @media (max-width: 560px) {
+  :root {
+    --site-header-offset: 155px;
+    --resume-anchor-offset: 285px;
+  }
+
   .container {
     width: min(100% - 28px, 1120px);
   }
@@ -529,6 +575,7 @@ footer {
   }
 
   .resume-header,
+  .resume-nav,
   .resume-block {
     padding: 24px;
   }
