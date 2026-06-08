@@ -454,8 +454,11 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 12px;
-  margin-top: 18px;
   padding-left: 18px;
+}
+
+.resume-block .integration-summary {
+  margin-bottom: 32px;
 }
 
 .integration-list li {
