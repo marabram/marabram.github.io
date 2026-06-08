@@ -271,6 +271,7 @@ a:hover {
 }
 
 .resume-header > div:first-child {
+  flex: 1 1 auto;
   min-width: 0;
 }
 
@@ -284,6 +285,7 @@ a:hover {
   margin: 10px 0 0;
   color: var(--muted);
   line-height: 1.5;
+  white-space: nowrap;
 }
 
 .contact-list {
@@ -497,6 +499,10 @@ footer {
   .resume-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .role-line {
+    white-space: normal;
   }
 
   .main-nav,
